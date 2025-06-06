@@ -26,6 +26,10 @@ function LoginPage() {
     }
   };
 
+  function RegisterPage() {
+    navigate("/register");
+  };
+
   return (
     <div style={{ padding: 40 }}>
       <h1>로그인 페이지</h1>
@@ -48,8 +52,13 @@ function LoginPage() {
             autoComplete="current-password"
           />
         </div>
+        
         <button type="submit">로그인</button>
       </form>
+      <button
+          type="button"
+          onClick={ RegisterPage }
+        >회원가입</button>
     </div>
   );
 }

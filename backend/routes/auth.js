@@ -1,11 +1,14 @@
 const express = require('express');
-const { login, join } = require('../controller/auth');
-const { isjwt } = require('../middlewares/isjwt');
+const { login, idcheckr, register } = require('../controller/auth');
+const { isjwt } = require('../utils/isjwt');
+
 
 const router = express.Router();
 
 router.post( '/login', login, isjwt );
 
-router.post('/join', join);
+router.post('/idcheck', idcheckr);
 
+router.post('/register', register);
+ 
 module.exports = router;
