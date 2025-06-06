@@ -1,5 +1,5 @@
 const express = require('express');
-const { login, idcheckr, register } = require('../controller/auth');
+const { login, idcheckr, register } = require('../controllers/auth');
 const { isjwt } = require('../utils/isjwt');
 
 
