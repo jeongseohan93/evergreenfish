@@ -11,3 +11,14 @@ export async function searchApi(keyword) {
   });
   return res.data;
 }
+
+export async function register(form) {
+  return await axios.post("http://localhost:8002/auth/register", form);
+}
+
+export async function idcheck( { email }){
+  const res = await axios.post("http://localhost:8002/auth/idcheck", {
+    email
+  });
+  return res.data;
+};

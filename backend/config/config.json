@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "dkdlvoem482!",
-    "database": "nodebird",
+    "database": "evergreenfish",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
