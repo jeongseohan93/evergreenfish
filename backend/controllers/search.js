@@ -1,6 +1,3 @@
-
-
-
 exports.search = async (req, res ) => {
     const searchKey = req.query.keyword
 
