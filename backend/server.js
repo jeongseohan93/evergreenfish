@@ -31,9 +31,9 @@ app.use('/api', api);
 
 
 app.get('/', (req, res) => {
-    res.send("fuck you2");
+    res.send("hello wordld");
 });
 
 app.listen(port, () => {
-    console.log( port + '들어옴');
+    console.log( port + '에 접속하였습니다.');
 });
